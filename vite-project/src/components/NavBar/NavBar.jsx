@@ -1,22 +1,34 @@
 import React from "react";
 import "./navbar.css"
 import CartWidget from "../CartWidget/CartWidget";
+import {NavLink, Link} from 'react-router-dom'
 
 export const NavBar = () => {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
 <div className="container-fluid">
-    <a className="navbar-brand" href="#">GuitarsPro</a>
+    
+        <h3 className="navbar-brand">GuitarsPro</h3>
+    
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
             <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">Inicio</a>
+            <Link to='/' className="nav-link active" aria-current="page" href="#">Inicio</Link>
             </li>
             <li className="nav-item">
-            <a className="nav-link" href="#">Catalogo</a>
+            <NavLink to='/category/Epiphone' activeclassname='activeOption' className="nav-link active">Epiphone</NavLink>
+            </li>
+            <li className="nav-item">
+            <NavLink to='/category/CORT' activeclassname='activeOption' className="nav-link active">CORT</NavLink>
+            </li>
+            <li className="nav-item">
+            <NavLink to='/category/Ibañez' activeclassname='activeOption' className="nav-link active">Ibañez</NavLink>
+            </li>
+            <li className="nav-item">
+            <NavLink to='/category/Fender' activeclassname='activeOption' className="nav-link active">Fender</NavLink>
             </li>
             <li className="nav-item">
             <a className="nav-link" href="#"><CartWidget/></a>

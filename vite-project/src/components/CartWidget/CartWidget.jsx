@@ -6,6 +6,7 @@ export const CartWidget = () => {
 return (
     <div>
         <FontAwesomeIcon icon={faShoppingCart} />
+        0
     </div>
 );
 }
