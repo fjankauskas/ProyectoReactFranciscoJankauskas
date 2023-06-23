@@ -13,7 +13,7 @@ return (
         <Link to={`/item/${id}`} className="btn btn-primary">Ver Detalles</Link>
     </div>
         <footer className="ItemFooter">
-            <ItemCount inicial={1} stock={5} onAdd={(cantidad) => console.log('Cantidad agregada ', cantidad)} />
+            {/* <ItemCount inicial={1} stock={5} onAdd={(cantidad) => console.log('Cantidad agregada ', cantidad)} /> */}
         </footer>
     </div>
 )
